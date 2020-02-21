@@ -93,7 +93,7 @@ def all_holidays_with_bbq(holiday_hash)
     
     
     season_value.each_with_index do |holiday_value, holiday_index|
-      
+      puts holiday_value
       if(holiday_value.include?("BBQ"))
         result << holiday_index
       end
