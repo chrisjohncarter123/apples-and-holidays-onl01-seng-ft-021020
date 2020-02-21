@@ -98,7 +98,7 @@ def all_holidays_with_bbq(holiday_hash)
         
         if(supplies.kind_of?(Array))
           puts "supplies: #{supplies}"
-          puts "#{holiday_value}"
+          puts "#{holiday_value[0]}"
           if(supplies.include?("BBQ"))
             result << holiday_index
           end
