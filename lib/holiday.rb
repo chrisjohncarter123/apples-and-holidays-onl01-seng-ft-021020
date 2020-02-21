@@ -92,11 +92,9 @@ def all_holidays_with_bbq(holiday_hash)
   holiday_hash.each do |key, value|
     value.each_with_index do |value2, index|
       value2.each_with_index do |value3, index|
-        #result << value3
+        result << value3
         
-        value3.each do |v|
-          result << v
-        end
+
       end
       
     end
