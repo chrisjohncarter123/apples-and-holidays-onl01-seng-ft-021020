@@ -94,7 +94,7 @@ def all_holidays_with_bbq(holiday_hash)
     
     season_value.each_with_index do |holiday_value, holiday_index|
 
-      holiday_value.each do |supplies| 
+      holiday_value.each do |key4, supplies| 
         
         if(supplies.kind_of?(Array))
           puts "supplies: #{supplies}"
