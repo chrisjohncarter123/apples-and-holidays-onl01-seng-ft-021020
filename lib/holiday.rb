@@ -68,7 +68,7 @@ def all_supplies_in_holidays(holiday_hash)
       line = "  #{key2.capitalize}: "
       value2.each_with_index do |value3, key3|
         line += value3
-        if(key3 < value2.length)
+        if(key3 < value2.length - 1)
           line += ", "
         end
       end
