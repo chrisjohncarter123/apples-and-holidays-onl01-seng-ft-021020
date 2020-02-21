@@ -68,7 +68,9 @@ def all_supplies_in_holidays(holiday_hash)
       
       holiday_name = key2.split("_").join(" ")
       
-      line = "  #{key2.capitalize}: "
+      holiday_name = holiday_name.split.map(&:capitalize).join(' ')
+      
+      line = "  #{holiday_name}: "
       value2.each_with_index do |value3, key3|
         line += value3
         if(key3 < value2.length - 1)
