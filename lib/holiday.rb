@@ -96,9 +96,11 @@ def all_holidays_with_bbq(holiday_hash)
       puts ""
       puts holiday_value
       puts ""
-      if(holiday_value.include?("BBQ"))
+      holiday_value.each |supplies| do
+      if(supplies == "BBQ")
         result << holiday_index
       end
+    end
       
     end
     
