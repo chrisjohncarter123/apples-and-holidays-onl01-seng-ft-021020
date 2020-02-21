@@ -65,9 +65,12 @@ def all_supplies_in_holidays(holiday_hash)
     puts "#{key.capitalize}:"
     
     value.each do |key2, value2|
-      line = "  #{key2.capitalize}:"
+      line = "  #{key2.capitalize}: "
       value2.each do |value3, key3|
         line += value3
+        if(key3 < value2.count)
+          line += ", "
+        end
       end
       puts line
     end
