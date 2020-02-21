@@ -93,6 +93,7 @@ def all_holidays_with_bbq(holiday_hash)
     
     
     season_value.each_with_index do |holiday_value, holiday_index|
+      puts ""
       puts holiday_value
       puts ""
       if(holiday_value.include?("BBQ"))
