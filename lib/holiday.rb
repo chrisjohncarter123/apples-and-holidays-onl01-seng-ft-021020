@@ -96,6 +96,7 @@ def all_holidays_with_bbq(holiday_hash)
 
       holiday_value.each do |supplies| 
         puts "supplies: #{supplies}"
+        if(kind_of?(Array))
         if(supplies == ("BBQ"))
           result << holiday_index
         end
