@@ -89,12 +89,13 @@ def all_holidays_with_bbq(holiday_hash)
 
   result = []
 
-  holiday_hash.each do |key, value|
-    value.each_with_index do |value2, index|
-      value2.each_with_index do |value3, index|
-        result << value3
-        
-
+  holiday_hash.each do |season_key, season_value|
+    
+    
+    season_value.each_with_index do |holiday_value, holiday_index|
+      
+      if(holiday_value.include?("BBQ"))
+        result << holiday_index
       end
       
     end
