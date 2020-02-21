@@ -100,7 +100,7 @@ def all_holidays_with_bbq(holiday_hash)
           puts "supplies: #{supplies}"
           puts "#{holiday_value[0]}"
           if(supplies.include?("BBQ"))
-            result << holiday_index
+            result << holiday_value[0]
           end
         end
       end 
