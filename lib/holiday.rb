@@ -66,7 +66,7 @@ def all_supplies_in_holidays(holiday_hash)
     
     value.each do |key2, value2|
       
-      
+      holiday_name = key2.split("_").join(" ")
       
       line = "  #{key2.capitalize}: "
       value2.each_with_index do |value3, key3|
