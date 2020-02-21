@@ -66,7 +66,7 @@ def all_supplies_in_holidays(holiday_hash)
     
     value.each do |key2, value2|
       
-      holiday_name = key2.split("_").join(" ")
+      holiday_name = "#{key2}".split("_").join(" ")
       
       holiday_name = holiday_name.split.map(&:capitalize).join(' ')
       
