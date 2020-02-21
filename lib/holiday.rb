@@ -90,7 +90,7 @@ def all_holidays_with_bbq(holiday_hash)
   holiday_hash.each do |key, value|
     value.each_with_index do |value2, index|
       value2.each_with_index do |value3, index|
-        puts value3
+        #puts value3
       end
       
     end
