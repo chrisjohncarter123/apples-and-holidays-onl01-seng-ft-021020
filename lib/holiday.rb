@@ -96,7 +96,7 @@ def all_holidays_with_bbq(holiday_hash)
       puts ""
       puts holiday_value
       puts ""
-      holiday_value.each |supplies| do
+      holiday_value.each do |supplies| 
       if(supplies == "BBQ")
         result << holiday_index
       end
